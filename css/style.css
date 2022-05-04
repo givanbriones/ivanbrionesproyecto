@@ -1,9 +1,12 @@
 *{margin: 0;
 padding: 0;}
-body{background-color:aquamarine;
+html{height: 100%;}
+body{background-color: black;
 font-family: Arial, Helvetica, sans-serif;
 position: relative;
-padding-bottom: 100px;
+min-height: 110vh;
+width: 100%;
+margin:0;
 }
 header img{
     margin: 5px;
@@ -14,13 +17,7 @@ header img{
     position: fixed;
     top: 0%;
     z-index: 100;}
-.footerLogo{
-    margin: 15px;
-    margin-left: 40px;
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-  }
+.menuBar {display: none;}
 nav ul {list-style: none;
     margin: 0;
     padding: 0; 
@@ -41,34 +38,29 @@ nav ul li a{color: whitesmoke;
 }
 nav ul li a:hover{background-color: aquamarine;}
 
-.imgCentral{display: inline;
-    object-fit: contain;
-    position:center;
-    max-width: 100%;
-    max-height: 100%;
-    }
-.titulosection{position: absolute;
+.imgCentral{position: relative;
     width: 100%;
-height: 100%;
+    height: 100%;
+    }
+.titulosection{display: flex;
+position: absolute;
+top: 55px;
+min-height: 80%;
+width: 100%;
 background: rgb(0,255,239);
-background: linear-gradient(293deg, rgba(0,255,239,0.10968137254901966) 21%, rgba(0,0,0,1) 91%);
-}
-
+    background: linear-gradient(293deg, rgba(0,255,239,0.10968137254901966) 21%, rgba(0,0,0,1) 91%);
+    }
 .titulo{display: flex;
-    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
     justify-content: center;
-    margin-top: 100px;
-    left: 50px;
-    z-index: 98;
     color: whitesmoke ;
+    
 }
 .titulolema{display:flex;
-    position: absolute;
-    top: 135px;
-    left: 150px;
+margin-top: 60px;
     font-size: medium;
     font-style: italic;
-    z-index: 97;
 color: whitesmoke
 }
 .ov-btn-slide-top {
@@ -77,12 +69,13 @@ color: whitesmoke
     border: 2px solid aquamarine; /* tamaño y color de borde */
     padding: 16px 20px;
     border-radius: 5px; /* redondear bordes */
-    position: relative;
     z-index: 98;
+    position: absolute;
     overflow: hidden;
     display: inline-block;
-    top: 450px;
-    left: 700px;
+    margin-top: 30%;
+    margin-bottom: 37%;
+    margin-left: 45%;
     text-decoration: none;
   }
   .ov-btn-slide-top:hover {
@@ -92,7 +85,7 @@ color: whitesmoke
   .ov-btn-slide-top::after {
     content: "";
     background: rgba(0, 0, 0, 0.842); /* color de fondo hover */
-    position: absolute;
+    position:absolute;
     z-index: -1;
     padding: 16px 20px;
     display: block;
@@ -102,6 +95,7 @@ color: whitesmoke
     bottom: 100%;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+    
     
     
   }
@@ -114,87 +108,159 @@ color: whitesmoke
     transition: all 0.35s;
   }
   
-.imgRedesSociales{max-width: 50px;
+.imgRedesSociales{position: relative;
+    max-width: 50px;
 max-height: 50px;
 float: right;
 margin: 10px;
-margin-top: 50px;
+top: 20px;
 border-radius: 15px;
 }
 .posicion-centrar{position: center;}
-footer{
-    background-color: black;
-    position: absolute;
-bottom: 0px;
+.footer{position: absolute;
+    background-color: black; 
 width: 100%;
+bottom: 0;
 }
-.footerSubscripcion{position: absolute;
+.footerSubscripcion{position:relative ;
+    display: flex;
     width: 500px;
-    bottom: 50px;
-    left: 540px;
+    top: 30px;
+    left: 35%;
+    right: auto;
+    justify-content: center;
     text-align: center;
 color: beige;
 }
-.footerIngresarMail{position:absolute;
-    width: 100px;
-    left: 590px;
-    top: 82px;
+.footerIngresarMail{position: relative;
+    top: 20px;
+    margin-left: 590px;
     text-align: center;
 color: beige;
-margin-left: 10;
-margin-bottom: 0;
 padding: 2px}
-.footerMail{position:absolute;
-    width: 200px;
-    height: 17px;
-    left: 690px;
-    top: 78px;
+.footerMail{position: relative;
+    top: 20px;
+    width: 200px;   
     text-align: center;
 color: black;
 margin-left: 5px;
 padding: 2px}
-.footerEnviarMail{position: absolute;
+.footerEnviarMail{position: relative;
+    top: 20px;
     width: 50px;
-    height: 25px;
-    left: 900px;
-    top: 78px;
     text-align: center;
 color: beige;
 margin-left: 5px;
 padding: 2px}
-.footerDerechos{max-width: 246px;
+.footerDerechos{
+    position: relative;
+    max-width: 246px;
     border: 0.5px solid white;
-    margin: 10px;
     margin-left: 15px;
     padding: 2.5px;
     color: beige;
 text-align: left;}
+.footerLogo{
+    position: relative;
+    margin-left: 40px;
+    width: 100px;
+    border-radius: 15px;
+  }
 .NosotrosDiv{
 margin: 10px;
 color:black}
+.sectionTienda{color:aliceblue;
+margin-left: 20px;
+margin-bottom: 100px;
+display: flex;
+flex-wrap: nowrap;}
+.imgArtTienda{height: 350px;
+width: 250px;}
+.imgBuyTienda{height: 70px ;
+width: 70px;}
+@media screen and (max-width:1023px) { 
+    body{}
+    nav ul {max-width: 100%;}
+    .titulosection{display: flex;
+        width: 100%;
+        max-height: 30%;
+            }
+    .footer{width: 100%;
+    margin-top: 20px;}
+    .footerDiv{display: flex;
+        margin-top: 0px;
+        margin: 2%;
+        padding: 1px;
+        align-items: center;
+            flex-direction: row;}
+    .footerSubscripcion{display: flex;
+        left: auto;
+        }
+    .footerIngresarMail{display: flex;
+        margin: 0;
+    }
+    .footerMail{display: flex;
+    }
+    .footerEnviarMail{display: flex;}
+    .titulo{display: block;
+        max-height: 20px;}
+    .titulolema{display: block;
+            max-height: 20px;}
+    .footerSello{display: flex;
+        align-items:flex-end;
+    position: relative;
+margin-bottom: 2%;
+margin-top: 5%;}
+    .footerDerechos{           
+            }
+    .footerLogo{position: relative;
+            }
+            .sectionTienda{flex-direction: column;}
+}    
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 50%;
+    }
+    nav ul{
+        text-align: left;
+    }  
+    nav ul li{padding: 1px;}
+    .imgCentral{top: 150px;}
+    
+        header img{right: 1px;
+        height: 40px;width: 40px;
+        }
+        .titulosection{top: 50px;}
+        .titulo{margin-top: 50px;}
+        .titulolema{font-size: 12px;
+        margin-top:70px}
+        .ov-btn-slide-top{padding: 8px 12px;
+        top: 250px;
+    object-position: center;}
+        .ov-btn-slide-top::after{padding: 8px 12px;}
+        .footerIngresarMail{font-size: 10px;}
+        .footerMail{width: 100px;
+        font-size: 10px;}
+        .footerEnviarMail{font-size: 10px;
+        justify-content: center;
+    margin: 1px;}
+    .footerSubscripcion{max-width: 50%;
+        padding: 10px;
+        top: 10px;
+        }
+        .divImgRedesSociales{display: flex;
+        flex-direction: column;float: right;width: 50px;
+    }
+    .footerLogo{height: 50px;
+    width: 50px;
+margin-left: 10px;}
+.footerSello{padding: 10px;}
 
-/* MEDIA QUERYS */
-@media screen and (max-width:1023px) {
-    nav ul {
-        width: 30%;
-        height: 100%;
-        position: fixed;
+.sectionTienda{color:aliceblue;
+    flex-direction: column;}
+    .imgArtTienda{height: 200px;
+    width: 150px;}
+    .imgBuyTienda{height: 30px ;
+    width: 30px;}
+        
 }
-nav ul li{display: block;
-float: ;
-border-bottom: rgba(127, 255, 212, 0.671);
-}
-.menuBar {display: block;
-background-color: aliceblue;
-}
-.menuBar .botonMenu{display: block;
-padding-top: 50px;
-padding: 20px;
-background-color: aquamarine;
-text-decoration: none;
-font-weight: bold;
-color: aquamarine;
-}
-}
-
-@media screen and {max-width: 600px}
