@@ -122,6 +122,11 @@ border-radius: 15px;
 width: 100%;
 bottom: 0;
 }
+.footerTienda{position:relative;
+    background-color: black; 
+width: 100%;
+bottom: 0;
+}
 .footerSubscripcion{position:relative ;
     display: flex;
     width: 500px;
@@ -171,13 +176,43 @@ margin: 10px;
 color:black}
 .sectionTienda{color:aliceblue;
 margin-left: 20px;
-margin-bottom: 100px;
+margin-bottom: auto;
 display: flex;
 flex-wrap: nowrap;}
 .imgArtTienda{height: 350px;
 width: 250px;}
 .imgBuyTienda{height: 70px ;
 width: 70px;}
+.titulosTienda{display: block;
+    padding: 1%;
+margin: 5px;
+margin-top: 20px;
+height: auto;
+margin-bottom: 10px;
+text-align: center;
+font-size:x-large;
+    color: rgb(51, 51, 51);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(48, 48, 48));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%, 50.1%, 60.1%, 65.1%,80%,90.1%,92%{
+        color: rgb(51, 51, 51);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color:rgb(255, 255, 255);
+        text-shadow: 0 0 10px aquamarine,
+        0 0 20px aquamarine,
+        0 0 40px aquamarine,
+        0 0 80px aquamarine,
+        0 0 160px aquamarine;
+    }
+}
+
+
 @media screen and (max-width:1023px) { 
     body{}
     nav ul {max-width: 100%;}
