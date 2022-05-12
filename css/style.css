@@ -1,7 +1,7 @@
-*{margin: 0;
+{margin: 0;
 padding: 0;}
 html{height: 100%;}
-body{background-color: black;
+body{
 font-family: Arial, Helvetica, sans-serif;
 position: relative;
 min-height: 110vh;
@@ -107,7 +107,15 @@ color: whitesmoke
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
-  
+.carouselCSS{position: relative;}
+.carouselIMG{max-width: 100%;
+    max-height: 600px;
+    object-fit:cover;
+} 
+.tiendaTitulo{text-align: center;
+color: aquamarine;
+padding-bottom: 50px;
+padding-top: 40px;}
 .imgRedesSociales{position: relative;
     max-width: 50px;
 max-height: 50px;
@@ -116,8 +124,14 @@ margin: 10px;
 top: 20px;
 border-radius: 15px;
 }
+.registrarseFondo{background-image: url(../imagenes/registrarseMangas.jpg);
+object-fit:contain;}
+.registrarseTitulo{-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;}
+.registrarseLorem{font-weight: bolder;}
+.registrarseBoton{width: 100%;}
 .posicion-centrar{position: center;}
-.footer{position: absolute;
+.footer{position: relative;
     background-color: black; 
 width: 100%;
 bottom: 0;
@@ -260,8 +274,8 @@ margin-top: 5%;}
         text-align: left;
     }  
     nav ul li{padding: 1px;}
-    .imgCentral{top: 150px;}
-    
+    .imgCentral{top: 150px;
+    }
         header img{right: 1px;
         height: 40px;width: 40px;
         }
