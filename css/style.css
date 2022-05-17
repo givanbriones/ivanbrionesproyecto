@@ -190,14 +190,17 @@ margin: 10px;
 color:black}
 .sectionTienda{color:aliceblue;
 margin-left: 20px;
+margin-right: 20px;
 margin-bottom: auto;
 display: flex;
-flex-wrap: nowrap;}
+flex-wrap: nowrap;
+position: relative;}
 .imgArtTienda{height: 350px;
 width: 250px;}
 .imgBuyTienda{height: 70px ;
 width: 70px;}
-.titulosTienda{display: block;
+.titulosTienda{
+    width: 50%;
     padding: 1%;
 margin: 5px;
 margin-top: 20px;
@@ -206,10 +209,13 @@ margin-bottom: 10px;
 text-align: center;
 font-size:x-large;
     color: rgb(51, 51, 51);
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(48, 48, 48));
     line-height: 0.70em;
     outline: none;
     animation: animate 5s linear infinite;
+}
+.tiendaArticle{border: 1px solid aquamarine;
+text-align: center;}
+.tiendaArticle:hover{background-color: rgba(148, 11, 211, 0.253);
 }
 @keyframes animate{
     0%,18%,20%, 50.1%, 60.1%, 65.1%,80%,90.1%,92%{
@@ -234,11 +240,14 @@ font-size:x-large;
         width: 100%;
         max-height: 30%;
             }
-    .footer{width: 100%;
-    margin-top: 20px;}
+            .titulo{font-size: 100%;}
+            .titulolema{font-size: 90%;}
+            .carouselIMG{max-height: 300px;}
+            .ov-btn-slide-top{font-size: 80%;}
+    .footer{width: 100%;}
     .footerDiv{display: flex;
         margin-top: 0px;
-        margin: 2%;
+        justify-content: center;
         padding: 1px;
         align-items: center;
             flex-direction: row;}
@@ -265,6 +274,8 @@ margin-top: 5%;}
     .footerLogo{position: relative;
             }
             .sectionTienda{flex-direction: column;}
+            .titulosTienda{
+                width: 100%;}
 }    
 @media screen and (max-width: 600px) {
     body{
@@ -272,21 +283,30 @@ margin-top: 5%;}
     }
     nav ul{
         text-align: left;
+        font-size: 80%;
+        position: relative;
     }  
     nav ul li{padding: 1px;}
-    .imgCentral{top: 150px;
+    .imgCentral{top: 50%;
     }
         header img{right: 1px;
         height: 40px;width: 40px;
         }
-        .titulosection{top: 50px;}
-        .titulo{margin-top: 50px;}
-        .titulolema{font-size: 12px;
-        margin-top:70px}
+        .titulosection{top: 5%;}
+        .titulo{margin-top: 20%;
+            font-size: 100%;}
+        .titulolema{font-size: 70%;
+        margin-top: 25%;
+        }
         .ov-btn-slide-top{padding: 8px 12px;
-        top: 250px;
-    object-position: center;}
+        top: 10%;
+        font-size: 60%;
+        object-position: center;}
         .ov-btn-slide-top::after{padding: 8px 12px;}
+        .carouselIMG{max-height: 200px;}
+        .footer{margin-top: 0px;
+        bottom: 0px;}
+        .footerDiv{justify-content: center;}
         .footerIngresarMail{font-size: 10px;}
         .footerMail{width: 100px;
         font-size: 10px;}
@@ -311,5 +331,7 @@ margin-left: 10px;}
     width: 150px;}
     .imgBuyTienda{height: 30px ;
     width: 30px;}
+    .titulosTienda{
+        width: 100%;}
         
 }
