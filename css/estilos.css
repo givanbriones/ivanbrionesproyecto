@@ -1,1 +1,518 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+@charset "UTF-8";
+.nosotrosBody {
+  background-color: rgba(101, 236, 101, 0.904);
+}
+
+.nosotrosDiv1 {
+  margin-top: 50px;
+  padding: 10px;
+  text-align: left;
+  background-color: black;
+}
+
+.nosotrosDiv2 {
+  margin-top: 50px;
+  padding: 10px;
+  text-align: right;
+}
+
+.nosotrosDiv3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-align: left;
+  background-color: black;
+}
+
+.nosotrosTitulo {
+  color: green;
+}
+
+.nosotrosP {
+  color: aliceblue;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  min-height: 110vh;
+  width: 100%;
+  margin: 0;
+}
+
+header img {
+  margin: 5px;
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  position: fixed;
+  top: 0%;
+  z-index: 100;
+}
+
+.menuBar {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  text-align: right;
+  font-weight: 550;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav ul li a:hover {
+  background-color: aquamarine;
+}
+
+.imgCentral {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.titulosection {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  min-height: 80%;
+  width: 100%;
+  background: #00ffef;
+  background: linear-gradient(293deg, rgba(0, 255, 239, 0.109681) 21%, black 91%);
+}
+
+.titulo {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 50px;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.titulolema {
+  display: flex;
+  margin-top: 60px;
+  font-size: medium;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+.ov-btn-slide-top {
+  background: rgba(127, 255, 212, 0.671);
+  /* color de fondo */
+  color: white;
+  /* color de fuente */
+  border: 2px solid aquamarine;
+  /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 5px;
+  /* redondear bordes */
+  z-index: 98;
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 30%;
+  margin-bottom: 37%;
+  margin-left: 45%;
+  text-decoration: none;
+}
+
+.ov-btn-slide-top:hover {
+  color: white;
+  /* color de fuente hover */
+}
+
+.ov-btn-slide-top::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.842);
+  /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.ov-btn-slide-top:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.carouselCSS {
+  position: relative;
+}
+
+.carouselIMG {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.tiendaTitulo {
+  text-align: center;
+  color: aquamarine;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+.imgRedesSociales {
+  position: relative;
+  max-width: 50px;
+  max-height: 50px;
+  float: right;
+  margin: 10px;
+  top: 20px;
+  border-radius: 15px;
+}
+
+.registrarseFondo {
+  background-image: url(../imagenes/registrarseMangas.jpg);
+  object-fit: contain;
+}
+
+.registrarseTitulo {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.registrarseLorem {
+  font-weight: bolder;
+}
+
+.registrarseBoton {
+  width: 100%;
+}
+
+.posicion-centrar {
+  position: center;
+}
+
+.footer {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerTienda {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerSubscripcion {
+  position: relative;
+  display: flex;
+  width: 500px;
+  top: 30px;
+  left: 35%;
+  right: auto;
+  justify-content: center;
+  text-align: center;
+  color: beige;
+}
+
+.footerIngresarMail {
+  position: relative;
+  top: 20px;
+  margin-left: 590px;
+  text-align: center;
+  color: beige;
+  padding: 2px;
+}
+
+.footerMail {
+  position: relative;
+  top: 20px;
+  width: 200px;
+  text-align: center;
+  color: black;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.footerEnviarMail {
+  position: relative;
+  top: 20px;
+  width: 50px;
+  text-align: center;
+  color: beige;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.footerDerechos {
+  position: relative;
+  max-width: 246px;
+  border: 0.5px solid white;
+  margin-left: 15px;
+  padding: 2.5px;
+  color: beige;
+  text-align: left;
+}
+
+.footerLogo {
+  position: relative;
+  margin-left: 40px;
+  width: 100px;
+  border-radius: 15px;
+}
+
+.NosotrosDiv {
+  margin: 10px;
+  color: black;
+}
+
+.sectionTienda {
+  color: aliceblue;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.imgArtTienda {
+  height: 350px;
+  width: 250px;
+}
+
+.imgBuyTienda {
+  height: 70px;
+  width: 70px;
+}
+
+.titulosTienda {
+  width: 50%;
+  padding: 1%;
+  margin: 5px;
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: x-large;
+  color: #333333;
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+.tiendaArticle {
+  border: 1px solid aquamarine;
+  text-align: center;
+}
+
+.tiendaArticle:hover {
+  background-color: rgba(148, 11, 211, 0.253);
+}
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60.1%, 65.1%, 80%, 90.1%, 92% {
+    color: #333333;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: white;
+    text-shadow: 0 0 10px aquamarine, 0 0 20px aquamarine, 0 0 40px aquamarine, 0 0 80px aquamarine, 0 0 160px aquamarine;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  nav ul {
+    max-width: 100%;
+  }
+  .titulosection {
+    display: flex;
+    width: 100%;
+    max-height: 30%;
+  }
+  .titulo {
+    font-size: 100%;
+  }
+  .titulolema {
+    font-size: 90%;
+  }
+  .carouselIMG {
+    max-height: 300px;
+  }
+  .ov-btn-slide-top {
+    font-size: 80%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footerDiv {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    padding: 1px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footerSubscripcion {
+    display: flex;
+    left: auto;
+  }
+  .footerIngresarMail {
+    display: flex;
+    margin: 0;
+  }
+  .footerMail {
+    display: flex;
+  }
+  .footerEnviarMail {
+    display: flex;
+  }
+  .titulo {
+    display: block;
+    max-height: 20px;
+  }
+  .titulolema {
+    display: block;
+    max-height: 20px;
+  }
+  .footerSello {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .footerLogo {
+    position: relative;
+  }
+  .sectionTienda {
+    flex-direction: column;
+  }
+  .titulosTienda {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 50%;
+  }
+  nav ul {
+    text-align: left;
+    font-size: 80%;
+    position: relative;
+  }
+  nav ul li {
+    padding: 1px;
+  }
+  .imgCentral {
+    top: 50%;
+  }
+  header img {
+    right: 1px;
+    height: 40px;
+    width: 40px;
+  }
+  .titulosection {
+    top: 5%;
+  }
+  .titulo {
+    margin-top: 20%;
+    font-size: 100%;
+  }
+  .titulolema {
+    font-size: 70%;
+    margin-top: 25%;
+  }
+  .ov-btn-slide-top {
+    padding: 8px 12px;
+    top: 10%;
+    font-size: 60%;
+    object-position: center;
+  }
+  .ov-btn-slide-top::after {
+    padding: 8px 12px;
+  }
+  .carouselIMG {
+    max-height: 200px;
+  }
+  .footer {
+    margin-top: 0px;
+    bottom: 0px;
+  }
+  .footerDiv {
+    justify-content: center;
+  }
+  .footerIngresarMail {
+    font-size: 10px;
+  }
+  .footerMail {
+    width: 100px;
+    font-size: 10px;
+  }
+  .footerEnviarMail {
+    font-size: 10px;
+    justify-content: center;
+    margin: 1px;
+  }
+  .footerSubscripcion {
+    max-width: 50%;
+    padding: 10px;
+    top: 10px;
+  }
+  .divImgRedesSociales {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 50px;
+  }
+  .footerLogo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+  }
+  .footerSello {
+    padding: 10px;
+  }
+  .sectionTienda {
+    color: aliceblue;
+    flex-direction: column;
+  }
+  .imgArtTienda {
+    height: 200px;
+    width: 150px;
+  }
+  .imgBuyTienda {
+    height: 30px;
+    width: 30px;
+  }
+  .titulosTienda {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
