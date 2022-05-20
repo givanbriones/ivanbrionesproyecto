@@ -1,35 +1,33 @@
 @charset "UTF-8";
 .nosotrosBody {
-  background-color: rgba(101, 236, 101, 0.904);
+  background-color: #aae9cf;
+  height: 100%;
+  margin-top: 5%;
+  bottom: 0 !important;
+  position: relative;
 }
 
-.nosotrosDiv1 {
-  margin-top: 50px;
-  padding: 10px;
-  text-align: left;
-  background-color: black;
+.nosotrosGradiente {
+  background-color: Aquamarine;
+  background-image: linear-gradient(90deg, #72f0bb, #7fd4ac);
 }
 
-.nosotrosDiv2 {
-  margin-top: 50px;
-  padding: 10px;
-  text-align: right;
+.nosotrosPresentacion {
+  box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.637);
+  text-align: center;
 }
 
-.nosotrosDiv3 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 10px;
-  text-align: left;
-  background-color: black;
+.nosotrosTarjeta {
+  background-color: white;
+  color: #73da91;
 }
 
-.nosotrosTitulo {
-  color: green;
+.nosotrosTarjetaP {
+  font-style: italic;
 }
 
-.nosotrosP {
-  color: aliceblue;
+.nosotrosFooter {
+  margin-top: 10px;
 }
 
 body {
@@ -277,6 +275,7 @@ nav ul li a:hover {
   padding: 2.5px;
   color: beige;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .footerLogo {

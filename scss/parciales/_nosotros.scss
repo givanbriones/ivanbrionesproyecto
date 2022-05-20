@@ -1,17 +1,16 @@
-$bgcolorGreen: rgba(101, 236, 101, 0.904);
+$bgcolorGreen: rgb(170, 233, 207);
 
-.nosotrosBody{background-color: $bgcolorGreen;}
-.nosotrosDiv1{margin-top: 50px;
-    padding: 10px;
-    text-align: left;
-background-color: black;}
-.nosotrosDiv2{margin-top: 50px;
-    padding: 10px;
-    text-align: right;}
-.nosotrosDiv3{margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px;
-    text-align: left;
-background-color: black;}
-.nosotrosTitulo{color: green;}
-.nosotrosP{color: aliceblue;}
+.nosotrosBody{background-color: $bgcolorGreen;
+height: 100%;
+margin-top: 5%;
+bottom: 0 !important;
+position: relative;}
+.nosotrosGradiente{background-color:Aquamarine; background-image: linear-gradient(90deg, rgb(114, 240, 187), #7fd4ac);
+
+}
+.nosotrosPresentacion{box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.637);
+text-align: center;}
+.nosotrosTarjeta{background-color: rgb(255, 255, 255);
+color: rgb(115, 218, 145);}
+.nosotrosTarjetaP{font-style: italic;}
+.nosotrosFooter{margin-top: 10px;}
