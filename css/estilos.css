@@ -30,6 +30,39 @@
   margin-top: 10px;
 }
 
+.titulosTienda {
+  width: 50%;
+  padding: 1%;
+  margin: 5px;
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: x-large;
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+.subtitulosTienda, .mangasTitulo, .postersTitulo, .figurascoleccionablesTitulo {
+  font-family: fantasy;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 0px 0px 9px #54fdf55e;
+}
+
+.mangasTitulo {
+  color: #b10404;
+}
+
+.postersTitulo {
+  color: #7b01c2;
+}
+
+.figurascoleccionablesTitulo {
+  color: #35ec35;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -177,7 +210,7 @@ nav ul li a:hover {
   text-align: center;
   color: aquamarine;
   padding-bottom: 50px;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .imgRedesSociales {

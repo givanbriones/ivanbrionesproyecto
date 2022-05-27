@@ -197,20 +197,6 @@ position: relative;}
 width: 250px;}
 .imgBuyTienda{height: 70px ;
 width: 70px;}
-.titulosTienda{
-    width: 50%;
-    padding: 1%;
-margin: 5px;
-margin-top: 20px;
-height: auto;
-margin-bottom: 10px;
-text-align: center;
-font-size:x-large;
-    color: rgb(51, 51, 51);
-    line-height: 0.70em;
-    outline: none;
-    animation: animate 5s linear infinite;
-}
 .tiendaArticle{border: 1px solid aquamarine;
 text-align: center;}
 .tiendaArticle:hover{background-color: rgba(148, 11, 211, 0.253);

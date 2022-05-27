@@ -1,4 +1,5 @@
 @import "parciales/_nosotros.scss";
+@import "parciales/_tienda.scss";
 
 body{
 font-family: Arial, Helvetica, sans-serif;
@@ -114,7 +115,7 @@ color: whitesmoke
 .tiendaTitulo{text-align: center;
 color: aquamarine;
 padding-bottom: 50px;
-padding-top: 40px;}
+padding-top: 100px;}
 .imgRedesSociales{position: relative;
     max-width: 50px;
 max-height: 50px;

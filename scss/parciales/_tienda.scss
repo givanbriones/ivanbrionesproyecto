@@ -1,0 +1,35 @@
+$colortitulos: (
+    mangas: rgb(177, 4, 4),
+    posters: rgb(123, 1, 194),
+    figurascoleccionables: rgb(53, 236, 53)
+);
+.titulosTienda {
+    @include font(fantasy, x-large, center);
+    width: 50%;
+    padding: 1%;
+    margin: 5px;
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 10px;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+  }
+  @mixin font($font-family, $font-size, $text-align){
+    font-family: $font-family;
+    font-size: $font-size;
+    text-align: $text-align;
+  }
+  .subtitulosTienda{
+    @include font(fantasy, 25px, center);
+    text-shadow: 0px 0px 9px #54fdf55e;
+    }
+  .mangasTitulo{
+    @extend .subtitulosTienda;
+    color: map-get($colortitulos, mangas);}
+  .postersTitulo{
+    @extend .subtitulosTienda;
+    color: map-get($colortitulos, posters);}
+  .figurascoleccionablesTitulo{
+    @extend .subtitulosTienda;
+    color: map-get($colortitulos, figurascoleccionables);}
