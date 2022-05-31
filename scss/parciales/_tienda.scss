@@ -4,7 +4,7 @@ $colortitulos: (
     figurascoleccionables: rgb(53, 236, 53)
 );
 .titulosTienda {
-    @include font(fantasy, x-large, center);
+    @include font(bolder, x-large, center);
     width: 50%;
     padding: 1%;
     margin: 5px;
