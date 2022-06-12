@@ -37,8 +37,6 @@
   margin-top: 20px;
   height: auto;
   margin-bottom: 10px;
-  text-align: center;
-  font-size: x-large;
   line-height: 0.70em;
   outline: none;
   animation: animate 5s linear infinite;
@@ -61,6 +59,21 @@
 
 .figurascoleccionablesTitulo {
   color: #35ec35;
+}
+
+.imgBuyTienda {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.tiendaBotonComprar {
+  align-content: center;
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 0;
 }
 
 body {
@@ -249,6 +262,7 @@ nav ul li a:hover {
   position: relative;
   background-color: black;
   width: 100%;
+  padding-bottom: 10px;
   bottom: 0;
 }
 
@@ -257,15 +271,14 @@ nav ul li a:hover {
   background-color: black;
   width: 100%;
   bottom: 0;
+  padding-bottom: 10px;
 }
 
 .footerSubscripcion {
   position: relative;
   display: flex;
-  width: 500px;
+  width: 100%;
   top: 30px;
-  left: 35%;
-  right: auto;
   justify-content: center;
   text-align: center;
   color: beige;
@@ -274,7 +287,6 @@ nav ul li a:hover {
 .footerIngresarMail {
   position: relative;
   top: 20px;
-  margin-left: 590px;
   text-align: center;
   color: beige;
   padding: 2px;
@@ -295,7 +307,7 @@ nav ul li a:hover {
   top: 20px;
   width: 50px;
   text-align: center;
-  color: beige;
+  color: black;
   margin-left: 5px;
   padding: 2px;
 }
@@ -306,6 +318,7 @@ nav ul li a:hover {
   border: 0.5px solid white;
   margin-left: 15px;
   padding: 2.5px;
+  padding-bottom: 5px;
   color: beige;
   text-align: left;
   margin-bottom: 0;
@@ -316,6 +329,15 @@ nav ul li a:hover {
   margin-left: 40px;
   width: 100px;
   border-radius: 15px;
+}
+
+.footerDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  align-items: center;
+  flex-direction: row;
 }
 
 .NosotrosDiv {
@@ -404,6 +426,7 @@ nav ul li a:hover {
   }
   .footerDiv {
     display: flex;
+    width: 100%;
     margin-top: 0px;
     justify-content: center;
     padding: 1px;
@@ -412,7 +435,9 @@ nav ul li a:hover {
   }
   .footerSubscripcion {
     display: flex;
-    left: auto;
+    width: 80%;
+    text-align: center;
+    left: 100px;
   }
   .footerIngresarMail {
     display: flex;
@@ -436,7 +461,8 @@ nav ul li a:hover {
     display: flex;
     align-items: flex-end;
     position: relative;
-    margin-bottom: 2%;
+    padding-bottom: 10px;
+    margin-bottom: 0;
     margin-top: 5%;
   }
   .footerLogo {
@@ -447,6 +473,10 @@ nav ul li a:hover {
   }
   .titulosTienda {
     width: 100%;
+  }
+  .imgRedesSociales {
+    margin: 0;
+    padding: 7px;
   }
 }
 
@@ -513,7 +543,8 @@ nav ul li a:hover {
     margin: 1px;
   }
   .footerSubscripcion {
-    max-width: 50%;
+    width: 60%;
+    text-align: center;
     padding: 10px;
     top: 10px;
   }
@@ -538,10 +569,6 @@ nav ul li a:hover {
   .imgArtTienda {
     height: 200px;
     width: 150px;
-  }
-  .imgBuyTienda {
-    height: 30px;
-    width: 30px;
   }
   .titulosTienda {
     width: 100%;

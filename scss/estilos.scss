@@ -135,26 +135,25 @@ object-fit:contain;}
 .footer{position: relative;
     background-color: black; 
 width: 100%;
+padding-bottom: 10px;
 bottom: 0;
 }
 .footerTienda{position:relative;
     background-color: black; 
 width: 100%;
 bottom: 0;
+padding-bottom: 10px;
 }
-.footerSubscripcion{position:relative ;
+.footerSubscripcion{position:relative;
     display: flex;
-    width: 500px;
+    width: 100%;
     top: 30px;
-    left: 35%;
-    right: auto;
     justify-content: center;
     text-align: center;
 color: beige;
 }
 .footerIngresarMail{position: relative;
     top: 20px;
-    margin-left: 590px;
     text-align: center;
 color: beige;
 padding: 2px}
@@ -166,10 +165,11 @@ color: black;
 margin-left: 5px;
 padding: 2px}
 .footerEnviarMail{position: relative;
+
     top: 20px;
     width: 50px;
     text-align: center;
-color: beige;
+color: rgb(0, 0, 0);
 margin-left: 5px;
 padding: 2px}
 .footerDerechos{
@@ -178,6 +178,7 @@ padding: 2px}
     border: 0.5px solid white;
     margin-left: 15px;
     padding: 2.5px;
+    padding-bottom: 5px;
     color: beige;
 text-align: left;
 margin-bottom: 0;}
@@ -187,6 +188,12 @@ margin-bottom: 0;}
     width: 100px;
     border-radius: 15px;
   }
+  .footerDiv{width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    align-items: center;
+        flex-direction: row;}
 .NosotrosDiv{
 margin: 10px;
 color:black}
@@ -247,13 +254,16 @@ text-align: center;}
             .ov-btn-slide-top{font-size: 80%;}
     .footer{width: 100%;}
     .footerDiv{display: flex;
+        width: 100%;
         margin-top: 0px;
         justify-content: center;
         padding: 1px;
         align-items: center;
             flex-direction: row;}
     .footerSubscripcion{display: flex;
-        left: auto;
+        width: 80%;
+        text-align: center;
+        left: 100px;
         }
     .footerIngresarMail{display: flex;
         margin: 0;
@@ -268,13 +278,16 @@ text-align: center;}
     .footerSello{display: flex;
         align-items:flex-end;
     position: relative;
-margin-bottom: 2%;
+    padding-bottom: 10px;
+margin-bottom: 0;
 margin-top: 5%;}
     .footerLogo{position: relative;
             }
             .sectionTienda{flex-direction: column;}
             .titulosTienda{
                 width: 100%;}
+    .imgRedesSociales{margin: 0;
+    padding: 7px;}
 }    
 @media screen and (max-width: 600px) {
     body{
@@ -312,7 +325,9 @@ margin-top: 5%;}
         .footerEnviarMail{font-size: 10px;
         justify-content: center;
     margin: 1px;}
-    .footerSubscripcion{max-width: 50%;
+    .footerSubscripcion{
+        width: 60%;
+        text-align: center;
         padding: 10px;
         top: 10px;
         }
@@ -328,8 +343,6 @@ margin-left: 10px;}
     flex-direction: column;}
     .imgArtTienda{height: 200px;
     width: 150px;}
-    .imgBuyTienda{height: 30px ;
-    width: 30px;}
     .titulosTienda{
         width: 100%;}
         
